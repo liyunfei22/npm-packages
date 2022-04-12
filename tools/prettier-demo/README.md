@@ -56,3 +56,4 @@ npx prettier --check .
 [husky+lint-staged 助力前端代码规范](https://www.shouxicto.com/article/512.html)
 [prettier 官网](https://prettier.io/)
 [eslint-config-prettier](https://github.com/prettier/eslint-config-prettier)
+[recommended-configuration](https://github.com/prettier/eslint-plugin-prettier#recommended-configuration)
