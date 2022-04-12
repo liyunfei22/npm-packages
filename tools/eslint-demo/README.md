@@ -1,10 +1,10 @@
 # 概况
 
-ESLint最初是由Nicholas C. Zakas 于2013年6月创建的开源项目。它的目标是提供一个插件化的javascript代码检测工具。
+ESLint 最初是由 Nicholas C. Zakas 于 2013 年 6 月创建的开源项目。它的目标是提供一个插件化的 javascript 代码检测工具。
 
-- ESLint 使用 Espree 解析 JavaScript。
-- ESLint 使用 AST 去分析代码中的模式
-- ESLint 是完全插件化的。每一个规则都是一个插件并且你可以在运行时添加更多的规则
+-   ESLint 使用 Espree 解析 JavaScript。
+-   ESLint 使用 AST 去分析代码中的模式
+-   ESLint 是完全插件化的。每一个规则都是一个插件并且你可以在运行时添加更多的规则
 
 ## 说明
 
@@ -23,12 +23,13 @@ ESLint最初是由Nicholas C. Zakas 于2013年6月创建的开源项目。它的
 
 "off" or 0 - 关闭规则
 "warn" or 1 - 将规则视为一个警告（不会影响退出码）
-"error" or 2 - 将规则视为一个错误 (退出码为1)
+"error" or 2 - 将规则视为一个错误 (退出码为 1)
 这三个错误级别可以允许你细粒度的控制 ESLint 是如何应用规则（更多关于配置选项和细节的问题，请查看配置文件）
 
 你的 .eslintrc 配置文件可以包含下面的一行：
 
     "extends": "eslint:recommended"
+
 由于这行，所有在 规则页面 被标记为 “” 的规则将会默认开启。另外，你可以在 npmjs.com 搜索 “eslint-config” 使用别人创建好的配置。只有在你的配置文件中扩展了一个可分享的配置或者明确开启一个规则，ESLint 才会去校验你的代码。
 
 ## 命令行
@@ -55,12 +56,12 @@ eslint lib/**
 
 ### 解析器
 
-ESLint 默认使用Espree作为其解析器，你可以在配置文件中指定一个不同的解析器
+ESLint 默认使用 Espree 作为其解析器，你可以在配置文件中指定一个不同的解析器
 以下解析器与 ESLint 兼容：
 
-- Esprima
-- Babel-ESLint - 一个对Babel解析器的包装，使其能够与 ESLint 兼容。
-- @typescript-eslint/parser - 将 TypeScript 转换成与 estree 兼容的形式，以便在ESLint中使用。
+-   Esprima
+-   Babel-ESLint - 一个对 Babel 解析器的包装，使其能够与 ESLint 兼容。
+-   @typescript-eslint/parser - 将 TypeScript 转换成与 estree 兼容的形式，以便在 ESLint 中使用。
 
 ```json
 {
@@ -78,10 +79,10 @@ ecmaVersion - 默认设置为 3，5（默认）
 sourceType - 设置为 "script" (默认) 或 "module"（如果你的代码是 ECMAScript 模块)。
 ecmaFeatures - 这是个对象，表示你想使用的额外的语言特性:
 
-- globalReturn - 允许在全局作用域下使用 return 语句
-- impliedStrict - 启用全局 strict mode (如果 ecmaVersion 是 5 或更高)
-- jsx - 启用 JSX
-- experimentalObjectRestSpread - 启用实验性的 object rest/spread properties 支持
+-   globalReturn - 允许在全局作用域下使用 return 语句
+-   impliedStrict - 启用全局 strict mode (如果 ecmaVersion 是 5 或更高)
+-   jsx - 启用 JSX
+-   experimentalObjectRestSpread - 启用实验性的 object rest/spread properties 支持
 
 ### env
 
@@ -134,10 +135,7 @@ ecmaFeatures - 这是个对象，表示你想使用的额外的语言特性:
 
 ```json
 {
-    "plugins": [
-        "plugin1",
-        "eslint-plugin-plugin2"
-    ]
+    "plugins": ["plugin1", "eslint-plugin-plugin2"]
 }
 ```
 
@@ -145,9 +143,9 @@ ecmaFeatures - 这是个对象，表示你想使用的额外的语言特性:
 
 ESLint 附带有大量的规则。你可以使用注释或配置文件修改你项目中要使用的规则。要改变一个规则设置，你必须将规则 ID 设置为下列值之一：
 
-- "off" 或 0 - 关闭规则
-- "warn" 或 1 - 开启规则，使用警告级别的错误：warn (不会导致程序退出)
-- "error" 或 2 - 开启规则，使用错误级别的错误：error (当被触发的时候，程序会退出)
+-   "off" 或 0 - 关闭规则
+-   "warn" 或 1 - 开启规则，使用警告级别的错误：warn (不会导致程序退出)
+-   "error" 或 2 - 开启规则，使用错误级别的错误：error (当被触发的时候，程序会退出)
 
 还可以使用 rules 连同错误级别和任何你想使用的选项，在配置文件中进行规则配置。例如：
 
@@ -174,7 +172,7 @@ alert('foo');
 ### 使用配置文件
 
 有两种方式使用配置文件。
-第一种方式是通过 .eslintrc.* 和 package.json 文件
+第一种方式是通过 .eslintrc.\* 和 package.json 文件
 第二种方式是使用 -c 选项传递命令行将文件保持到你喜欢的地方。
 
 ```shell
@@ -186,18 +184,16 @@ eslint -c myconfig.json myfiletotest.js
 一个配置文件可以被基础配置中的已启用的规则继承。
 extends 属性值可以是：
 
-- 指定配置的字符串(配置文件的路径、可共享配置的名称、eslint:recommended 或 eslint:all)
-- 字符串数组：每个配置继承它前面的配置
+-   指定配置的字符串(配置文件的路径、可共享配置的名称、eslint:recommended 或 eslint:all)
+-   字符串数组：每个配置继承它前面的配置
 
 1. Using "eslint:recommended"
-值为 "eslint:recommended" 的 extends 属性启用一系列核心规则，这些规则报告一些常见问题，在 规则页面 中被标记为  。这个推荐的子集只能在 ESLint 主要版本进行更新。
-2.使用可共享的配置包
-可共享的配置 是一个 npm 包，它输出一个配置对象。要确保这个包安装在 ESLint 能请求到的目录下。
+   值为 "eslint:recommended" 的 extends 属性启用一系列核心规则，这些规则报告一些常见问题，在 规则页面 中被标记为 。这个推荐的子集只能在 ESLint 主要版本进行更新。 2.使用可共享的配置包
+   可共享的配置 是一个 npm 包，它输出一个配置对象。要确保这个包安装在 ESLint 能请求到的目录下。
 
 extends 属性值可以省略包名的前缀 eslint-config-。
 
-eslint --init 命令可以创建一个配置，这样你就可以扩展一个流行的风格指南（比如，eslint-config-standard）
-3. 使用插件中的配置
+eslint --init 命令可以创建一个配置，这样你就可以扩展一个流行的风格指南（比如，eslint-config-standard） 3. 使用插件中的配置
 插件 是一个 npm 包，通常输出规则。一些插件也可以输出一个或多个命名的 配置。要确保这个包安装在 ESLint 能请求到的目录下。
 
 plugins 属性值 可以省略包名的前缀 `eslint-plugin-`。
@@ -209,39 +205,33 @@ JSON 格式的一个配置文件的例子：
 
 ```json
 {
-    "plugins": [
-        "react"
-    ],
-    "extends": [
-        "eslint:recommended",
-        "plugin:react/recommended"
-    ],
+    "plugins": ["react"],
+    "extends": ["eslint:recommended", "plugin:react/recommended"],
     "rules": {
-       "no-set-state": "off"
+        "no-set-state": "off"
     }
 }
-
 ```
 
-### 基于glob模式匹配
+### 基于 glob 模式匹配
 
 有时，你可能需要更精细的配置，比如，如果同一个目录下的文件需要有不同的配置。因此，你可以在配置中使用 overrides 键，它只适用于匹配特定的 glob 模式的文件，使用你在命令行上传递的格式 (e.g., `app/**/*.test.js`)。
 
 ```json
 {
-  "rules": {
-    "quotes": ["error", "double"]
-  },
+    "rules": {
+        "quotes": ["error", "double"]
+    },
 
-  "overrides": [
-    {
-      "files": ["bin/*.js", "lib/*.js"],
-      "excludedFiles": "*.test.js",
-      "rules": {
-        "quotes": ["error", "single"]
-      }
-    }
-  ]
+    "overrides": [
+        {
+            "files": ["bin/*.js", "lib/*.js"],
+            "excludedFiles": "*.test.js",
+            "rules": {
+                "quotes": ["error", "single"]
+            }
+        }
+    ]
 }
 ```
 
@@ -252,8 +242,8 @@ JSON 格式的一个配置文件的例子：
 
 ## 参考文章
 
-[深入理解eslint](https://segmentfault.com/a/1190000019896962)
+[深入理解 eslint](https://segmentfault.com/a/1190000019896962)
 
-[eslint官网](http://eslint.cn/)
+[eslint 官网](http://eslint.cn/)
 
 [typescript-eslint](https://www.npmjs.com/package/@typescript-eslint/eslint-plugin)

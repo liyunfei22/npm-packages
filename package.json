@@ -1,14 +1,19 @@
 {
-  "devDependencies": {
-    "husky": "^7.0.4",
-    "lint-staged": "^12.3.7",
-    "prettier": "^2.6.2"
-  },
-  "lint-staged": {
-    "**/*": "prettier --write --ignore-unknown"
-  },
-  "scripts": {
-    "prepare": "husky install",
-    "test": "echo test"
-  }
+    "devDependencies": {
+        "@typescript-eslint/eslint-plugin": "^5.19.0",
+        "@typescript-eslint/parser": "^5.19.0",
+        "eslint": "^8.13.0",
+        "eslint-config-prettier": "^8.5.0",
+        "husky": "^7.0.4",
+        "lint-staged": "^12.3.7",
+        "prettier": "^2.6.2",
+        "typescript": "^4.6.3"
+    },
+    "lint-staged": {
+        "**/*": "prettier --write --ignore-unknown"
+    },
+    "scripts": {
+        "prepare": "husky install",
+        "test": "echo test"
+    }
 }

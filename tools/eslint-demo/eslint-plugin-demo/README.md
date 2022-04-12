@@ -22,12 +22,9 @@ Add `demo` to the plugins section of your `.eslintrc` configuration file. You ca
 
 ```json
 {
-    "plugins": [
-        "demo"
-    ]
+    "plugins": ["demo"]
 }
 ```
-
 
 Then configure the rules you want to use under the rules section.
 
@@ -41,6 +38,4 @@ Then configure the rules you want to use under the rules section.
 
 ## Supported Rules
 
-* Fill in provided rules here
-
-
+-   Fill in provided rules here
