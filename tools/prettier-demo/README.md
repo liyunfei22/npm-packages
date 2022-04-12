@@ -56,4 +56,7 @@ npx prettier --check .
 [husky+lint-staged 助力前端代码规范](https://www.shouxicto.com/article/512.html)
 [prettier 官网](https://prettier.io/)
 [eslint-config-prettier](https://github.com/prettier/eslint-config-prettier)
-[recommended-configuration](https://github.com/prettier/eslint-plugin-prettier#recommended-configuration)
+[eslint-plugin-prettier](https://github.com/prettier/eslint-plugin-prettier#recommended-configuration)
+[使用 ESLint+Prettier 规范 React+Typescript 项目](https://zhuanlan.zhihu.com/p/62401626)
+[Eslint 中 plugins 和 extends 的区别](https://juejin.cn/post/6859291468138774535)
+[Prettier 看这一篇就行了](https://zhuanlan.zhihu.com/p/81764012)
