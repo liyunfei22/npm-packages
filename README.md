@@ -7,3 +7,4 @@
 3. [prettier](https://prettier.io/docs/en/install.html)
 4. [pinia](https://pinia.vuejs.org/getting-started.html#installation)
 5. [eslint](https://eslint.org/)
+6. [test]
