@@ -7,4 +7,6 @@
 3. [prettier](https://prettier.io/docs/en/install.html)
 4. [pinia](https://pinia.vuejs.org/getting-started.html#installation)
 5. [eslint](https://eslint.org/)
-6. [test]
+6. [rimraf](https://www.npmjs.com/package/rimraf) node 版的`rm -rf`
+7. [fs-extra](https://github.com/jprichardson/node-fs-extra) 拓展node 的原生fs模块
+8. [test]
