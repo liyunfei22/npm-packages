@@ -9,4 +9,5 @@
 5. [eslint](https://eslint.org/)
 6. [rimraf](https://www.npmjs.com/package/rimraf) node 版的`rm -rf`
 7. [fs-extra](https://github.com/jprichardson/node-fs-extra) 拓展node 的原生fs模块
-8. [test]
+8. [fast-glob](https://github.com/mrmlnc/fast-glob) 
+9. [test]
