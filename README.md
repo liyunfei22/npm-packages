@@ -11,4 +11,7 @@
 7. [fs-extra](https://github.com/jprichardson/node-fs-extra) 拓展node 的原生fs模块
 8. [fast-glob](https://github.com/mrmlnc/fast-glob)
 9. [AST](https://astexplorer.net/)
-10. [test]
+10. [radash](https://www.npmjs.com/package/radash)
+11. [use-debounce](https://github.com/xnimorz/use-debounce)
+12. [filesize](https://www.npmjs.com/package/filesize)
+13. [test]
